@@ -76,6 +76,7 @@
   nav li {
     display: inline;
     float: left;
+    line-height: 50px;
   }
   
   nav a {
@@ -86,6 +87,12 @@
     transition: 0.3s all;
   }
   
+  .current_page{
+    color: #000000;
+    background: rgb(252, 252, 252);
+    font-weight : bold;
+  }
+
   nav a:hover {
     background: rgb(81, 0, 119);
   }
@@ -94,9 +101,11 @@
     float: left;
     color: #fff;
     font-size: 35px;
-    line-height: 35px;
+    line-height: 50px;
     transition: 0.7s all;
-  }
+    margin-top:-15px;
+    padding-bottom: -15px; 
+}
   
   .alt-header .logo {
     color: #000;

@@ -30,7 +30,7 @@
   }
   
   .inner {
-    width: 800px;
+    width: 70%;
     position: relative;
     margin: 0 auto;
   }
@@ -79,7 +79,7 @@
   }
   
   nav a {
-    display: inline-block;
+    display: inline-blocks;
     color: #fff;
     text-decoration: none;
     padding: 25px;
@@ -87,14 +87,14 @@
   }
   
   nav a:hover {
-    background: red;
+    background: rgb(81, 0, 119);
   }
   
   .logo {
     float: left;
     color: #fff;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 35px;
     transition: 0.7s all;
   }
   

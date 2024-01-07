@@ -81,19 +81,18 @@
   
   nav a {
     display: inline-blocks;
-    color: #fff;
     text-decoration: none;
     padding: 25px;
     transition: 0.3s all;
     background: rgb(0, 0, 0);
   }
   .current_page {
-    color: #000000;
-    background: rgb(252, 252, 252);
-    font-weight : bold;
+    color: #000000 !important;
+    background: rgb(252, 252, 252) !important;
+    font-weight : bold !important;
   }
   .current_page a, .current_page a:hover {
-    color: #000000;
+    color: #000000 !important;
     background: rgb(252, 252, 252) !important;
   }
 
@@ -107,13 +106,13 @@
     padding-bottom: -15px; 
 }
 .inactive_page {
-  color: #000000;
-  background: rgb(252, 252, 252);
-  font-weight : bold;
+  color: #ffffff !important;
+  background: rgb(0, 0, 0) !important;
+  font-weight : bold !important ;
 }
 .inactive_page a, .inactive_page a:hover {
-  color: #000000;
-  background: rgb(81, 0, 119);
+  color: #ffffff !important;
+  background: rgb(81, 0, 119) !important;
 }
   .alt-header .logo {
     color: #000;

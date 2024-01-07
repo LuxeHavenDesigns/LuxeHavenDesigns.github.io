@@ -87,6 +87,7 @@
   }
   .current_page {
     color: #000000 !important;
+    background: rgb(255, 255, 255) !important;
     font-weight : bold !important;
   }
   .current_page a, .current_page a:hover {

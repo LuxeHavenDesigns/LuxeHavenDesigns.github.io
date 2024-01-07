@@ -93,7 +93,7 @@
   }
   .current_page a, .current_page a:hover {
     color: #000000 !important;
-    background: rgb(252, 252, 252) !important;
+    background: rgb(255, 0, 225) !important;
   }
 
   .logo {

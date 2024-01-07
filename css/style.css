@@ -87,11 +87,6 @@
     transition: 0.3s all;
     background: rgb(0, 0, 0);
   }
-
-  nav a:hover {
-    background: rgb(81, 0, 119);
-  }
-  
   .current_page {
     color: #000000;
     background: rgb(252, 252, 252);
@@ -111,7 +106,15 @@
     margin-top:-15px;
     padding-bottom: -15px; 
 }
-  
+.inactive_page {
+  color: #000000;
+  background: rgb(252, 252, 252);
+  font-weight : bold;
+}
+.inactive_page a, .inactive_page a:hover {
+  color: #000000;
+  background: rgb(81, 0, 119);
+}
   .alt-header .logo {
     color: #000;
   }

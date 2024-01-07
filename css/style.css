@@ -107,8 +107,6 @@
 }
 .inactive_page {
   color: #ffffff !important;
-  background: rgb(0, 0, 0) !important;
-  font-weight : bold !important ;
 }
 .inactive_page a, .inactive_page a:hover {
   color: #ffffff !important;

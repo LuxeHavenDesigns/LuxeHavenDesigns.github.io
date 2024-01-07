@@ -84,16 +84,14 @@
     text-decoration: none;
     padding: 25px;
     transition: 0.3s all;
-    background: rgb(0, 0, 0);
   }
   .current_page {
     color: #000000 !important;
-    background: rgb(252, 252, 252) !important;
     font-weight : bold !important;
   }
   .current_page a, .current_page a:hover {
     color: #000000 !important;
-    background: rgb(255, 0, 225) !important;
+    background: rgb(255, 255, 255) !important;
   }
 
   .logo {
@@ -108,7 +106,11 @@
 .inactive_page {
   color: #ffffff !important;
 }
-.inactive_page a, .inactive_page a:hover {
+.inactive_page a:link {
+  color: #ffffff !important;
+  background: rgb(0, 0, 0) !important;
+}
+.inactive_page a:hover {
   color: #ffffff !important;
   background: rgb(81, 0, 119) !important;
 }

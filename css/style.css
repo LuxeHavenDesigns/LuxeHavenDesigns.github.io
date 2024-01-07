@@ -85,6 +85,11 @@
     text-decoration: none;
     padding: 25px;
     transition: 0.3s all;
+    background: rgb(81, 0, 119);
+  }
+
+  nav a:hover {
+    background: rgb(81, 0, 119);
   }
   
   .current_page{
@@ -92,11 +97,11 @@
     background: rgb(252, 252, 252);
     font-weight : bold;
   }
-
-  nav a:hover {
-    background: rgb(81, 0, 119);
+  .current_page a:hover{
+    color: #000000;
+    background: rgb(252, 252, 252);
   }
-  
+
   .logo {
     float: left;
     color: #fff;

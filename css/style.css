@@ -92,12 +92,12 @@
     background: rgb(81, 0, 119);
   }
   
-  .current_page{
+  .current_page {
     color: #000000;
     background: rgb(252, 252, 252);
     font-weight : bold;
   }
-  .current_page a:hover{
+  .current_page a {
     color: #000000;
     background: rgb(252, 252, 252);
   }

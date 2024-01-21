@@ -86,18 +86,14 @@
     padding: 25px;
     transition: 0.3s all;
   }
-  li a:hover {
+  /*li a:hover {
     background: rgb(81, 0, 119) !important;
     color: #fff;
-  }
-  .current_page a:link {
+  }*/
+  .current_page:hover, .current_page {
     color: #000000 !important;
     background: rgb(255, 255, 255) !important;
     font-weight : bold !important;
-  }
-  .current_page a:hover {
-    color: #000000 !important;
-    /*background: rgb(255, 255, 255) !important;*/
   }
 
   .logo {
@@ -111,12 +107,11 @@
 }
 .inactive_page {
   color: #ffffff !important;
+  background: rgb(0, 0, 0);
 }
-.inactive_page a:hover, .inactive_page a:active {
+.inactive_page:hover {
   color: #ffffff !important;
   background: rgb(81, 0, 119) !important;
-  z-index: 2;
-  font-size: 150%;
 }
 
   .alt-header .logo {

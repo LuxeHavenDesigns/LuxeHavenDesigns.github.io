@@ -82,8 +82,13 @@
   nav a {
     display: inline-blocks;
     text-decoration: none;
+    color: #fff;
     padding: 25px;
     transition: 0.3s all;
+  }
+  li a:hover {
+    background: rgb(81, 0, 119) !important;
+    color: #fff;
   }
   .current_page a:link {
     color: #000000 !important;
@@ -113,6 +118,7 @@
   z-index: 2;
   font-size: 150%;
 }
+
   .alt-header .logo {
     color: #000;
   }

@@ -90,6 +90,10 @@
     background: rgb(255, 255, 255) !important;
     font-weight : bold !important;
   }
+  .current_page a:hover {
+    color: #000000 !important;
+    /*background: rgb(255, 255, 255) !important;*/
+  }
 
   .logo {
     float: left;
@@ -99,6 +103,9 @@
     transition: 0.7s all;
     margin-top:-15px;
     padding-bottom: -15px; 
+}
+.inactive_page {
+  color: #ffffff !important;
 }
 .inactive_page a:hover, .inactive_page a:active {
   color: #ffffff !important;

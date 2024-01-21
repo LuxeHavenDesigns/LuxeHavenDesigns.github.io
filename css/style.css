@@ -85,12 +85,12 @@
     padding: 25px;
     transition: 0.3s all;
   }
-  .current_page {
+  .current_page a:link {
     color: #000000 !important;
     background: rgb(255, 255, 255) !important;
     font-weight : bold !important;
   }
-  .current_page a, .current_page a:hover {
+  .current_page a:hover {
     color: #000000 !important;
     background: rgb(255, 255, 255) !important;
   }
@@ -109,7 +109,6 @@
 }
 .inactive_page a:link {
   color: #ffffff !important;
-  background: rgb(0, 0, 0) !important;
 }
 .inactive_page a:hover {
   color: #ffffff !important;

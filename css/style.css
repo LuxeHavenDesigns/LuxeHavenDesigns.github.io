@@ -90,10 +90,6 @@
     background: rgb(255, 255, 255) !important;
     font-weight : bold !important;
   }
-  .current_page a:hover {
-    color: #000000 !important;
-    background: rgb(255, 255, 255) !important;
-  }
 
   .logo {
     float: left;
@@ -104,15 +100,11 @@
     margin-top:-15px;
     padding-bottom: -15px; 
 }
-.inactive_page {
-  color: #ffffff !important;
-}
-.inactive_page a:link {
-  color: #ffffff !important;
-}
-.inactive_page a:hover {
+.inactive_page a:hover, .inactive_page a:active {
   color: #ffffff !important;
   background: rgb(81, 0, 119) !important;
+  z-index: 2;
+  font-size: 150%;
 }
   .alt-header .logo {
     color: #000;

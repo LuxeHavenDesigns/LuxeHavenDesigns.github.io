@@ -67,6 +67,8 @@
   
   nav {
     overflow: hidden;
+    margin-top: -30px;
+    margin-bottom: -15px;  
   }
   
   nav ul {
@@ -75,41 +77,57 @@
   
   nav li {
     display: inline;
-    float: left;
     line-height: 50px;
   }
   
   nav a {
     display: inline-blocks;
     text-decoration: none;
-    color: #fff;
-    padding: 25px;
+   
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 30px;
     transition: 0.3s all;
   }
   /*li a:hover {
     background: rgb(81, 0, 119) !important;
     color: #fff;
   }*/
-  .current_page:hover, .current_page {
+ .current_page a {
+    color: #000000 !important;
+    background: rgb(255, 255, 255) !important;
+    font-weight : bold ;
+    float: left;
+  }
+  .current_page a:hover {
     color: #000000 !important;
     background: rgb(255, 255, 255) !important;
     font-weight : bold !important;
   }
-
   .logo {
     float: left;
     color: #fff;
     font-size: 35px;
     line-height: 50px;
     transition: 0.7s all;
-    margin-top:-15px;
-    padding-bottom: -15px; 
+    padding-top:15px;
+    padding-bottom: 15px; 
 }
-.inactive_page {
+.inactive_page a {
   color: #ffffff !important;
   background: rgb(0, 0, 0);
+  float: left;
 }
-.inactive_page:hover {
+.inactive_page a:hover {
+  color: #ffffff !important;
+  background: rgb(81, 0, 119) !important;
+}
+.user a {
+  color: #ffffff !important;
+  background: rgb(0, 0, 0);
+  float: right;
+}
+.user a:hover {
   color: #ffffff !important;
   background: rgb(81, 0, 119) !important;
 }
@@ -126,8 +144,14 @@
     background: #000;
     color: #fff;
   }
-  
-  section .inner {
-    padding-top: 200px;
+  section {
+    height: 55%;
+  }
+  section .first_section {
+    padding-top: 150px;
+  }
+  section .second_section {
+    padding-top:250px;
+
   }
   

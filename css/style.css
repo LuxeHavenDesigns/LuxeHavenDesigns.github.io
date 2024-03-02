@@ -1,157 +1,202 @@
-/* apply a natural box layout model to all elements */
-*, *:before, *:after {
-    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-  }
-  
-  ::selection {
-    background: #000;
-    color: #aaf;
-  }
-  .alternate ::selection {
-    background: #c00;
-    color: #000;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    height: 2000px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  ul, li, h1, h2, h3, h4, h5, h6, p, a, .logo {
-    font-family: "Lato","Verdana",sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .inner {
-    width: 70%;
-    position: relative;
-    margin: 0 auto;
-  }
-  
-  header {
-    position: fixed;
-    width: 100%;
-    padding-top: 50px;
-    background: #000;
-    transition: 0.7s all;
-    z-index: 100;
-  }
-  
-  header.alt-header {
-    background: #fff;
-  }
-  
-  .alt-header a {
-    color: #000;
-  }
-  
-  body.header-fixed header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding-top: 0;
-    width: 100%;
-    z-index: 2;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  nav {
-    overflow: hidden;
-    margin-top: -30px;
-    margin-bottom: -15px;  
-  }
-  
-  nav ul {
-    float: right;
-  }
-  
-  nav li {
-    display: inline;
-    line-height: 50px;
-  }
-  
-  nav a {
-    display: inline-blocks;
-    text-decoration: none;
-   
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-top: 30px;
-    transition: 0.3s all;
-  }
-  /*li a:hover {
-    background: rgb(81, 0, 119) !important;
-    color: #fff;
-  }*/
- .current_page a {
-    color: #000000 !important;
-    background: rgb(255, 255, 255) !important;
-    font-weight : bold ;
-    float: left;
-  }
-  .current_page a:hover {
-    color: #000000 !important;
-    background: rgb(255, 255, 255) !important;
-    font-weight : bold !important;
-  }
-  .logo {
-    float: left;
-    color: #fff;
-    font-size: 35px;
-    line-height: 50px;
-    transition: 0.7s all;
-    padding-top:15px;
-    padding-bottom: 15px; 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.inactive_page a {
-  color: #ffffff !important;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  min-height: 5rem;
   background: rgb(0, 0, 0);
-  float: left;
+  color: rgb(255, 255, 255);
 }
-.inactive_page a:hover {
-  color: #ffffff !important;
-  background: rgb(81, 0, 119) !important;
+.logo{
+  padding: 40px;
+  margin-left: 40px;
+  font-size: 25px;
 }
-.user a {
-  color: #ffffff !important;
-  background: rgb(0, 0, 0);
+.text{
+  padding-left: 15%;
+  width: 70%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  font-size: 20px;
+}
+ul {
+  list-style: none;
   float: right;
-}
-.user a:hover {
-  color: #ffffff !important;
-  background: rgb(81, 0, 119) !important;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  margin-top: -70px;
+  display: flex;
+
 }
 
-  .alt-header .logo {
-    color: #000;
-  }
-  
-  body.header-fixed .logo {
-    font-size: 30px;
-  }
-  
-  .alternate {
-    background: #000;
-    color: #fff;
-  }
-  section {
-    height: 55%;
-  }
-  section .first_section {
-    padding-top: 150px;
-  }
-  section .second_section {
-    padding-top:250px;
+li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
 
+.hamburger {
+  display: none;
+}
+
+/* This is three bars, shape, not icon */
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  margin: 5px;
+}
+
+/* This is CSS for change color on Nav and links. */
+
+.nav.scrolled {
+  background-color: rgb(255, 255, 255) !important;
+  transition: background-color 400ms linear;
+}
+.nav.scrolled h4 {
+  color: black;
+}
+.nav h4 {
+  color: rgb(254, 254, 254);
+}
+@media screen and (min-width: 993px) {
+  .nav.scrolled .nav-link {
+    color: rgb(0, 0, 0);
   }
-  
+}
+#dropdown{
+  margin-top:15px;
+}
+.nav ul li ul{
+  margin-top: 100px;
+  left:0px;
+  position:absolute;
+  background: color #555;
+  color:#000000;
+}
+.nav ul li:hover > ul{
+  display:block;
+}
+.bar.scrolled .nav-link {
+  background: rgb(0, 0, 0);
+}
+
+section {
+  min-height: 1000px;
+  margin-left: 0px;
+}
+.white_section{
+  background-color: #fff;
+}
+.black_section{
+  background-color: #000000;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* background-color: rgba(0, 0, 0, 0.6); */
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+    margin-left: 15rem;
+  }
+
+  ul {
+    background: rgb(128, 128, 128);
+    flex-direction: column;
+    justify-content: center;
+
+    /* align-items: flex-start; */
+
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    right: 0;
+    width: 50%;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+
+  ul li {
+    opacity: 0;
+    margin-bottom: 2rem;
+  }
+  .opened {
+    transform: translateX(0%);
+  }
+
+  #bar-1,
+  #bar-2,
+  #bar-3 {
+    transition: all 0.3s ease;
+  }
+  .toggle #bar-1 {
+    /* background: rgb(0, 0, 0); */
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle #bar-2 {
+    opacity: 0;
+  }
+  .toggle #bar-3 {
+    /* background: rgb(0, 0, 0); */
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    background: rgb(92, 5, 5);
+    flex-direction: column;
+    justify-content: center;
+
+    /* align-items: flex-start; */
+
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    right: 0;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+
+  ul li {
+    opacity: 0;
+    margin-bottom: 2rem;
+  }
+}
